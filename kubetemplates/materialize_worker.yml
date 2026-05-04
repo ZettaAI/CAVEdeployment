@@ -956,7 +956,7 @@ spec:
             - su
             - nginx
             - -c
-            - "celery --app=run.celery worker --pool=prefork --hostname=worker.process@%h --queues=deltalake --loglevel=info -E -Ofair --concurrency=${CELERY_CONSUMER_CONCURRENCY}"
+            - "celery --app=run.celery worker --pool=prefork --hostname=worker.process@%h --queues=deltalake --loglevel=info -E -Ofair --concurrency=1"
           volumeMounts:
             - name: materializationengine-config-volume
               mountPath: /app/materializationengine/instance/
