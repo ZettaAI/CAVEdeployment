@@ -1007,6 +1007,10 @@ spec:
               value: "10"
             - name: DELTALAKE_FLUSH_THRESHOLD_BYTES
               value: "536870912"
+            - name: DELTALAKE_OPTIMIZE_MAX_CONCURRENT_TASKS
+              value: "1"
+            - name: DELTALAKE_OPTIMIZE_TARGET_SIZE_BYTES
+              value: "268435456"
             - name: WORKER_HOSTNAME
               valueFrom:
                 fieldRef:
