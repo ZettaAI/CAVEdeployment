@@ -1,6 +1,6 @@
-[8:31 AM]#!/bin/bash
+#!/bin/bash
 # Usage PGPASSWORD=yourpassword ./upgrade_postgis.sh [-h host] [-U user] [-p port]
-
+# note you may need to run several times as upgrades can conflict across databases
 PSQL_OPTS="$@"
 
 psql $PSQL_OPTS -Atc "
